@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,300,0,0" />
+    <title>formulario</title>
+</head>
+<body>
+    <div class="login-card-container">
+        <div class="login-card">
+            <div class="login-card-logo">
+                <img src="main-logo.jpg" alt="">
+            </div>
+            <div class="login-card-header">
+                <h1>Contact Us</h1>
+                <div>Please use this spaces to contact us</div>
+            </div>
+            <form action="correo.php" method="post" class="login-card-form">
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">edit</span>
+                    <input type="text" name="nombre" placeholder="Name" required autofocus>
+                </div> 
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">alternate_email</span>
+                    <input type="email" name="email" placeholder="Email" required autofocus>
+                </div> 
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">comment</span>
+                    <input type="text" name="asunto" placeholder="Asunto" required autofocus>
+                </div> 
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">description</span>
+                    <textarea type="text" name="mensaje" placeholder="Mensaje" required maxlength="200"></textarea>
+                </div>     
+                    
+                <button type="submit">Send</button>     
+            </form>
+        </div>
+    </div>
+</body>
+</html>
